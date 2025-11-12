@@ -5,7 +5,6 @@ public class Cheers {
             int rep = Integer.parseInt(args[1]);
 
 
-            System.out.println();
             for(int i= 0; i<word.length(); i++){
 
                 char check = word.charAt(i);
@@ -15,10 +14,12 @@ public class Cheers {
                 
                 if(Letters.indexOf(check) >=0){
                         article = "an";
+                        System.out.println("Give me " + article + " " + check + ": " + check + "!");
                 } else {
                         article = "a";
+                        System.out.println("Give me  " + article + "  " + check + ": " + check + "!");
                 }
-                   System.out.println("Give me " + article + " " + check + ": " + check + "!");     
+                        
                 }
                 
 
